@@ -1,0 +1,43 @@
+
+.card{
+    width: 24vw;
+    height: 24vw;
+    position: relative;
+    border-radius:10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    transition: transform 0.3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+}
+.card__image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 3.0s ease-in-out;
+}
+.card_link{
+    
+    height: 100%;
+    display: flex;
+}
+.card__title{
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+    color: #ffff;
+    width: 100%;
+    overflow-wrap:break-word;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+@import "../../assets/styles/ResponsivesHome.scss"

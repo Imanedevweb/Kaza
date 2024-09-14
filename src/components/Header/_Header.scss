@@ -1,0 +1,31 @@
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4.8vw;
+    margin: 50px;
+}
+.Header_logo{
+    width: 15.7%;
+    height: auto;
+}
+
+.nav_header ul{
+    display: flex;
+    list-style: none;
+    gap: 57px;
+    height: 34px;
+}
+.nav_header li{
+    font-size:24px ;
+    font-weight: 500;
+}
+.nav_header a{
+    color: black;
+    text-decoration: none;
+}
+a.active{
+    text-decoration: underline;
+}
+
+@import "../../assets/styles/ResponsivesHome.scss"

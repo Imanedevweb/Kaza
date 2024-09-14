@@ -1,0 +1,13 @@
+.rating{
+    margin-right: 5px;
+}
+.star.filled{
+    color: #f66;
+    font-size: 36px;
+}
+.star.empty{
+    color: #E3E3E3;
+    font-size: 36px;
+}
+
+@import "../../assets/styles/ResponsisveLogD.scss"

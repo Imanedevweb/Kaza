@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.Banner {
+   margin: 0 50px;
+    position: relative;
+}
+    
+.Banner_img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px 0px #00000025;
+    border-radius: 25px;  
+}
+
+.Banner_text{
+    position: absolute;
+    top: 37%;           
+    left: 46%;          
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    color: #ffff;        
+    font-weight: 700;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center; 
+}
+
+@import "../../assets/styles/ResponsivesHome.scss"
