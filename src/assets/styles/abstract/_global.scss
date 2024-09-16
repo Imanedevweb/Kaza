@@ -19,4 +19,13 @@ main{
     margin:50px;
     background-color:#f6f6f6;
     border-radius: 25px;
+
+     @media (min-width: 375px) and (max-width:1024px){
+        margin: 20px 0px;
+        background-color: #ffff;
+
+        &home{
+            margin: 0 20px;
+        }
+    }
 }

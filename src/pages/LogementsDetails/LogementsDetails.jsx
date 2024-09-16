@@ -27,15 +27,17 @@ return(
                 <h1 className="logement_title">{logement.title}</h1>
                 <p className="logement_location">{logement.location}</p>
             </div>    
-            <Host logement={logement}/>
         </div>    
         <div className="logement_Tag-Rating">
             <Tags tags={logement.tags} />
-            <Rating rating={logement.rating} />
+            <div className="rating-host-container">
+                <Rating rating={logement.rating} />
+                <Host logement={logement}/>
+            </div>    
         </div>  
     <div className="description-equipement"> 
           <Collapse title="Description">
-            <span>{logement.description}</span>
+            <p>{logement.description}</p>
         </Collapse>  
         <Collapse title="Equipement">
             <ul>

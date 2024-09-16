@@ -1,6 +1,7 @@
 .collapse_container{
    display: flex;
    flex-direction: column;
+   width: 50%;
 }
 .collapse_container button {
     color: #fff;
@@ -12,10 +13,11 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    padding: 10px;
 }
 
 .collapse_header h3{
-    margin-left: 10px;
+    margin:0 10px;
     font-size:  18px;
     font-weight: 700;
 }
@@ -24,30 +26,73 @@
     font-size: 32px;
     transition: transform 0.3s ease;
 }
-.Icon.open{
-    transform: rotate(180deg);
-}
 
 
 .Collapse-content{
-    ul{
-        list-style: none;
-        font-size: 18px;
-        font-weight: 400;
-        padding: 10px 30px
-    }   
+    
     max-height: 0;
-    font-size: 18px;
     overflow: hidden;
+    transition: max-height 0.5s ease;
     background-color: var(--grey-color);
     border-radius: 5px;
     letter-spacing: 2.5px;
+    padding: 0 20px;
 }
+    
 .Collapse-content.open{
     max-height: 500px;
-    padding: 15px;
-    margin: 0;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+.Collapse-content ul {
+    list-style: none;
+    padding: 0;
 }
 
+.Collapse-content li {
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    padding: 2px;
+}
 
-@import "../../assets/styles/ResponsivesCollapse.scss"
+/*****Responsive mobile****/
+
+@media (min-width:375px) and (max-width: 750px){
+  .collapse_container {
+    width: 100%;
+  }
+  .collapse_header{
+    height: 8vw;
+   }
+    .collapse_header h3 {
+    font-size: 13px !important;
+  }
+
+  .collapse_header .Icon{
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    margin: 0;
+  }
+  .collapse_header .Icon.open{
+    transform: rotate(180deg);
+  }
+  .Collapse-content{
+    font-size: 13px;
+  }
+  .Collapse-content.open {
+    font-size: 13px;
+    margin: 0;
+  }
+  .Collapse-content span{
+    font-size: 13px;
+  }
+  .Collapse-content li{
+    font-size: 13px;
+  }
+
+.description-equipement{
+        display: flex;
+        flex-direction: column;
+        gap: 10px!important;
+    }
+}

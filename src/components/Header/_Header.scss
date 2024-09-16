@@ -27,5 +27,21 @@
 a.active{
     text-decoration: underline;
 }
+/*****Responsive mobile******/
 
-@import "../../assets/styles/ResponsivesHome.scss"
+@media (min-width: 375px) and (max-width:750px){
+      .Header{
+        height: 12vw;
+        justify-content: space-between;
+        margin: 30px 20px;
+    }
+    .Header_logo{
+        width: 37.8%;
+    }
+    .nav_header ul{
+        gap:20px;
+    }
+    .nav_header li{
+        font-size: 12px;
+    }
+}

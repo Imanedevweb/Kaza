@@ -5,10 +5,11 @@
     justify-content: flex-end;
     align-items: center;
     gap:10px;
-   position: absolute;
-   right: 0;
-    
+    position: absolute;
+    right: 0;
+    top:-256%;
 }
+
 p.Host-Name{
     font-size: 18px;
     font-weight: 500;
@@ -24,4 +25,18 @@ p.Host-Name{
     height: 64px;
 }
 
-@import "../../assets/styles/ResponsisveLogD.scss"
+/***Responsive mobile**/
+ @media (min-width: 375px) and (max-width:750px){
+    .logementHost{
+        right: 0px;
+        top: 35% !important;
+
+        .Host-Name{
+            font-size: 12px;
+        }
+        .host-photo{
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

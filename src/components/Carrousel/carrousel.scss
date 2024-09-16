@@ -36,4 +36,27 @@
     font-weight: 500;
 }
 
-@import "../../assets/styles/ResponsisveLogD.scss"
+/***Responsive mobile****/
+  @media (min-width: 375px) and (max-width:750px){
+    .carrousel{
+        margin-bottom: 10px;
+    }
+    .carrousel img{
+        border-radius: 10px;
+        height: 68vw;
+    }
+    .ArrowLeft,
+    .ArrowRight{
+        font-size: 24px;
+    }
+    .ArrowLeft{
+        margin-left: 10px ;
+    }
+    .ArrowRight{
+        margin-right: 10px;
+    }
+    .slide_number{
+        left: 36vw;
+        top:88%;
+    }
+}

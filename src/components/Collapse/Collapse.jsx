@@ -16,13 +16,11 @@ function Collapse({ title, children}) {
     <div className="collapse_container">
       <button className="collapse_header" onClick={btnCollapse}>
         <h3>{title}</h3>
-        <p className={`Icon ${isOpen ?'open' : ""}`}>
-          <i className="fa-solid fa-chevron-down"></i>
-        </p>  
+        <i className={`fa-solid fa-chevron-down Icon ${isOpen ?'open' : ""}`}></i>
       </button>
     
-      <span className={`Collapse-content ${isOpen ? 'open' : ''}`}>{children}
-      </span>
+      <div className={`Collapse-content ${isOpen ? 'open' : ''}`}>{children}
+      </div>
     </div>
 
   );

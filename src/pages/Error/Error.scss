@@ -27,4 +27,16 @@
     text-decoration-line: underline;
     }
 
-@import "../../assets/styles/ResponsivesError.scss"
+    /*****Responsives ******/
+
+    @media (min-width:375px) and (max-width: 750px){
+    .title_404 {
+    font-size: 96px;
+    }
+    .MsgError {
+    font-size: 18px;
+    }
+    .text{
+        font-size: 14px;
+    }
+}

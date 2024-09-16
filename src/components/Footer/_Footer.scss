@@ -16,3 +16,17 @@ footer p{
     text-align: center;
     margin-bottom: 10px;
 }
+
+/***Responsives mobile****/
+
+@media (min-width: 375px) and (max-width:750px){
+    footer{
+    padding: 20px;
+}    
+    footer p{
+        font-size: 12px;
+        margin-left: 30%;
+        margin-right: 30%;
+        
+    }
+}

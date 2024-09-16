@@ -23,5 +23,22 @@
     font-family: 'Montserrat', sans-serif; 
     text-align: center; 
 }
+/***Responsive mobile ****/
 
-@import "../../assets/styles/ResponsivesHome.scss"
+@media (min-width: 375px) and (max-width:750px){
+    .Banner{
+        height: 29.6vw;
+        margin: 0 20px;
+    }
+    .Banner_text{
+       font-size: 24px; 
+       text-align: left;
+       left: 40%;
+       top: 36%;
+       width: 69%;
+    }
+    .Banner_img{
+        border-radius: 8px;
+
+    }
+}
