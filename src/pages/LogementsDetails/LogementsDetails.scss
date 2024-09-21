@@ -39,7 +39,7 @@ p.logement_location{
 
 /***Responsive mobile***/
 
-@media(min-width: 375px) and (max-width:1024px){
+@media(max-width:680px) {
     .logementDetail{
         margin:20px;
     }

@@ -9,8 +9,6 @@ function Carrousel({images}){
     let  controls;
     let countImage;
 
-    
-
     // Fonction pour aller à l'image précédente
    const prevSlide = () => {
         const isFirstSlide = currentIndex === 0;
@@ -30,7 +28,7 @@ function Carrousel({images}){
      controls =
         <div className="carrousel_controls">
               <div className="ArrowLeft" onClick={prevSlide}> 
-                    <FontAwesomeIcon icon={faChevronLeft} />
+                   <FontAwesomeIcon icon={faChevronLeft} />
               </div>      
               <div className="ArrowRight" onClick={nextSlide}> 
                   <FontAwesomeIcon icon={faChevronRight} />
