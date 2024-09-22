@@ -6,7 +6,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
-import LogementDetail from './pages/LogementsDetails/LogementsDetails';
+import LogementDetail from './pages/LogementDetails/LogementDetails';
 import Error from './pages/Error/Error'
 
 // Créez une racine (root) avec createRoot

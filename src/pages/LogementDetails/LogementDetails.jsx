@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom"
 import logementData from '../../Datas/LogementData.json'
-import'../LogementsDetails/LogementsDetails.scss'
+import'../LogementDetails/LogementDetails.scss'
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Host from "../../components/Host/Host";
 import Tags from "../../components/Tags/Tags";
