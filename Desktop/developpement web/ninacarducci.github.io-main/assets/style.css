@@ -89,12 +89,12 @@ body {
 	width: 80%;
 	font-size: 14px;
 }
-
+.visually-hidden {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
 #gallery {
 	/*	min-height: 100vh; */
-}
-.gallery {
-	display: none;
 }
 .title{
 	text-align: center;
@@ -104,7 +104,7 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color:#000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
